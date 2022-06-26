@@ -100,9 +100,9 @@ for layer in [1,2]:
             graph_hidden(net, layer, node)
             plt.scatter(full_input[:,0],full_input[:,1],
                         c=1-full_target[:,0],cmap='RdYlBu')
-            plt.savefig('%s%d_%d.png' % (args.net, layer, node))
+            plt.savefig('output/%s%d_%d.png' % (args.net, layer, node))
 
 graph_output(net)
 plt.scatter(full_input[:,0],full_input[:,1],
             c=1-full_target[:,0],cmap='RdYlBu')
-plt.savefig('%s_out.png' % args.net)
+plt.savefig('output/%s_out.png' % args.net)
